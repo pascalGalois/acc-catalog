@@ -1,0 +1,35 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>モンギル：STAR DIVE アカウント一覧</title>
+<style>
+:root{--bg:#f6f6f8;--fg:#222;--card:#fff;--line:#ddd;--accent:#c03}
+@media (prefers-color-scheme:dark){:root{--bg:#16161a;--fg:#eee;--card:#22222a;--line:#333;--accent:#ff5577}}
+body{margin:0;padding:16px;background:var(--bg);color:var(--fg);font-family:system-ui,sans-serif}
+h1{font-size:20px;margin:0 0 8px}
+.how{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px;line-height:1.8;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-top:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px;cursor:pointer}
+.no{font-weight:700;color:var(--accent)}.t{font-size:14px;margin:4px 0 8px}
+.card img{width:100%;border-radius:4px;display:block}
+.upd{font-size:12px;opacity:.7;margin-top:6px}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#333;color:#fff;padding:10px 16px;border-radius:20px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none}
+#toast.on{opacity:1}
+</style></head><body>
+<h1>モンギル：STAR DIVE アカウント一覧（4件）</h1>
+<div class="how"><b>ご購入の流れ</b><br>
+① ご希望のアカウントの画像をタップすると、管理番号がコピーされます。<br>
+② マツブシマーケットの出品ページのコメント欄に、管理番号を貼り付けて送信してください。<br>
+③ 価格をコメントでお返事します。<br>
+④ ご購入の場合は「購入希望」とコメントしてください。お客様専用の出品をご用意します。<br>
+⑤ 専用の出品からご購入ください。お支払い確認後、すぐにアカウントをお渡しします。<br>
+※在庫は随時入れ替わります。売り切れの際はご容赦ください。</div>
+<div class="upd">更新 2026-10-19 19:49</div>
+<div class="grid"><div class="card" data-no="0083"><div class="no">管理番号 0083</div><div class="t">【初期垢】限定ナレ入り ★5×3（ナレ・フレア・ジウォン）リセマラ</div><img loading="lazy" src="../img/0083.jpg" alt="管理番号 0083"></div><div class="card" data-no="0084"><div class="no">管理番号 0084</div><div class="t">【初期垢】限定ナレ入り ★5×3（ナレ・オフィーリア・ジウォン）リセマラ</div><img loading="lazy" src="../img/0084.jpg" alt="管理番号 0084"></div><div class="card" data-no="0085"><div class="no">管理番号 0085</div><div class="t">【初期垢】限定ナレ入り ★5×3（ナレ・オフィーリア・フレア）リセマラ</div><img loading="lazy" src="../img/0085.jpg" alt="管理番号 0085"></div><div class="card" data-no="0086"><div class="no">管理番号 0086</div><div class="t">【初期垢】限定ミーナ入り ★5×2（ミーナ・フレア）リセマラ</div><img loading="lazy" src="../img/0086.jpg" alt="管理番号 0086"></div></div>
+<div id="toast"></div>
+<script>
+function copyNo(no){var t='管理番号'+no;
+ function done(){var e=document.getElementById('toast');e.textContent='「'+t+'」をコピーしました';e.classList.add('on');setTimeout(function(){e.classList.remove('on')},1800)}
+ function fb(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(a);done()}
+ if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done,fb)}else{fb()}}
+document.querySelectorAll('.card').forEach(function(c){c.addEventListener('click',function(){copyNo(c.dataset.no)})});
+</script>
+</body></html>
