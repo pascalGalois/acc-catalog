@@ -1,4 +1,4 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8">
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><script defer src="https://cloud.umami.is/script.js" data-website-id="48002639-3823-4bde-baa9-fef383feb79e"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>モンギル：STAR DIVE アカウント一覧</title>
 <style>
 :root{--bg:#f6f6f8;--fg:#222;--card:#fff;--line:#ddd;--accent:#c03}
@@ -22,11 +22,12 @@ h1{font-size:20px;margin:0 0 8px}
 ④ ご購入の場合は「購入希望」とコメントしてください。お客様専用の出品をご用意します。<br>
 ⑤ 専用の出品からご購入ください。お支払い確認後、すぐにアカウントをお渡しします。<br>
 ※在庫は随時入れ替わります。売り切れの際はご容赦ください。</div>
-<div class="upd">更新 2026-10-20 23:30</div>
+<div class="upd">更新 2026-10-21 00:00</div>
 <div class="grid"><div class="card" data-no="0083"><div class="no">管理番号 0083</div><div class="t">【初期垢】限定ナレ入り ★5×3（ナレ・フレア・ジウォン）リセマラ</div><img loading="lazy" src="../img/0083.jpg" alt="管理番号 0083"></div><div class="card" data-no="0084"><div class="no">管理番号 0084</div><div class="t">【初期垢】限定ナレ入り ★5×3（ナレ・オフィーリア・ジウォン）リセマラ</div><img loading="lazy" src="../img/0084.jpg" alt="管理番号 0084"></div><div class="card" data-no="0086"><div class="no">管理番号 0086</div><div class="t">【初期垢】限定ミーナ入り ★5×2（ミーナ・フレア）リセマラ</div><img loading="lazy" src="../img/0086.jpg" alt="管理番号 0086"></div><div class="card" data-no="0137"><div class="no">管理番号 0137</div><div class="t">【初期垢】限定ナレ入り ★5×3（ナレ・フレア ほか1）リセマラ</div><img loading="lazy" src="../img/0137.jpg" alt="管理番号 0137"></div><div class="card" data-no="0138"><div class="no">管理番号 0138</div><div class="t">【初期垢】限定ナレ＋ミーナ ★5×4（ナレ・ミーナ・ジウォン ほか1）</div><img loading="lazy" src="../img/0138.jpg" alt="管理番号 0138"></div></div>
 <div id="toast"></div>
 <script>
 function copyNo(no){var t='管理番号'+no;
+ try{window.umami&&umami.track('copy',{no:String(no),page:location.pathname})}catch(e){}
  function done(){var e=document.getElementById('toast');e.textContent='「'+t+'」をコピーしました';e.classList.add('on');setTimeout(function(){e.classList.remove('on')},1800)}
  function fb(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(a);done()}
  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(done,fb)}else{fb()}}
